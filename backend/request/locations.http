@@ -1,0 +1,38 @@
+@api = http://localhost:3000/locations
+
+GET {{api}}
+
+###
+GET {{api}}/count
+
+
+###
+GET {{api}}/4
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "unidad": "6ta Seccion",
+    "oficial": "Ste Jara",
+    "lat": "-33.64",
+    "long": "-70.75",
+    "fecha": "2022-08-19 10:23:54"
+}
+
+###
+DELETE {{api}}/7
+
+###
+PUT {{api}}/8
+Content-Type: application/json
+
+{
+    "unidad": "6ta Seccion",
+    "oficial": "Ste Pena",
+    "lat": "-33.31",
+    "long": "-70.58",
+    "fecha": "2022-08-21 14:43:01"
+}
